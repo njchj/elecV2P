@@ -1,3 +1,4 @@
+pkg up -y
 pkg i git nodejs yarn -y
 npm install -g pm2
 yarn global add pm2
