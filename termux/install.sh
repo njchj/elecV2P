@@ -1,3 +1,4 @@
+cd ~
 if [ $(command -v wget | grep -c "wget") -lt 1 -o $(command -v node | grep -c "node") -lt 1 -o $(command -v yarn | grep -c "yarn") -lt 1 ]
 then yum update || apt update
 yes | yum upgrade || yes | apt upgrade
@@ -25,5 +26,5 @@ chmod +x v2p.sh
 clear
 echo v2p已经$cz完成，当前版本为$last_version，输入 ./v2p.sh 启动
 else clear
-echo v2p$cz失败，请检查全局或更换代理
+echo v2p$cz失败，请检查全局或更换代理后重新运行脚本
 fi
